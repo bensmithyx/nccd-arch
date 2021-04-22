@@ -1,6 +1,6 @@
-<mxfile compressed="false" host="Electron" modified="2021-04-22T17:48:10.707Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.5.1 Chrome/89.0.4389.82 Electron/12.0.1 Safari/537.36" etag="fKul0huGvj-g12qx5202" version="14.5.1" type="device">
+<mxfile compressed="false" host="app.diagrams.net" modified="2021-04-22T18:11:18.521Z" agent="5.0 (X11)" etag="mYnvcTHMrBLYnnaE3Nwm" version="14.6.6" type="device">
   <diagram id="Page-1" name="Page-1">
-    <mxGraphModel dx="724" dy="211" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+    <mxGraphModel dx="64" dy="-750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,7 +10,7 @@
         <mxCell id="LpydgIhb9bR34k0oGJzF-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;" parent="LpydgIhb9bR34k0oGJzF-7" vertex="1">
           <mxGeometry width="695.0000000000001" height="360" as="geometry" />
         </mxCell>
-        <mxCell id="LpydgIhb9bR34k0oGJzF-6" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Zone 8 - IDS&lt;br&gt;192.168.8.0/28&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LpydgIhb9bR34k0oGJzF-7" vertex="1">
+        <mxCell id="LpydgIhb9bR34k0oGJzF-6" value="&lt;font style=&quot;font-size: 15px&quot;&gt;Zone 8 - IDS&lt;br&gt;192.168.8.0/24&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LpydgIhb9bR34k0oGJzF-7" vertex="1">
           <mxGeometry x="34.75" y="19.2" width="175.25" height="50.8" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-133" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="LpydgIhb9bR34k0oGJzF-7" vertex="1">
@@ -41,7 +41,9 @@
           <mxGeometry x="974.77" y="280" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-16" value="" style="group;container=1;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="930" y="1660" width="1099" height="510" as="geometry" />
+          <mxGeometry x="930" y="1660" width="1099" height="510" as="geometry">
+            <mxRectangle x="930" y="1660" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-90" value="" style="group" parent="LpydgIhb9bR34k0oGJzF-16" vertex="1" connectable="0">
           <mxGeometry x="262" width="837" height="510" as="geometry" />
@@ -49,7 +51,7 @@
         <mxCell id="LpydgIhb9bR34k0oGJzF-17" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#23445d;fillColor=#94A0A8;" parent="LpydgIhb9bR34k0oGJzF-90" vertex="1">
           <mxGeometry x="-7" y="20" width="695.0000000000001" height="360" as="geometry" />
         </mxCell>
-        <mxCell id="LpydgIhb9bR34k0oGJzF-18" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Zone 2 - DMZ 192.168.2.0/24&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LpydgIhb9bR34k0oGJzF-90" vertex="1">
+        <mxCell id="LpydgIhb9bR34k0oGJzF-18" value="&lt;font style=&quot;font-size: 15px&quot;&gt;Zone 2 - DMZ 192.168.2.0/24&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LpydgIhb9bR34k0oGJzF-90" vertex="1">
           <mxGeometry y="320" width="200" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-70" value="" style="group" parent="LpydgIhb9bR34k0oGJzF-90" vertex="1" connectable="0">
@@ -58,8 +60,8 @@
         <mxCell id="LpydgIhb9bR34k0oGJzF-64" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;fillColor=#A1B9FC;" parent="LpydgIhb9bR34k0oGJzF-70" vertex="1">
           <mxGeometry x="-7" y="20" width="300" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="LpydgIhb9bR34k0oGJzF-65" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Zone 6 - Proxy 192.168.6.0/29&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LpydgIhb9bR34k0oGJzF-70" vertex="1">
-          <mxGeometry x="6.47" y="29.8" width="273.05" height="30.1" as="geometry" />
+        <mxCell id="LpydgIhb9bR34k0oGJzF-65" value="Zone 6 - Proxy 192.168.6.0/29" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LpydgIhb9bR34k0oGJzF-70" vertex="1">
+          <mxGeometry x="6.95" y="30" width="143.05" height="29.9" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-93" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="LpydgIhb9bR34k0oGJzF-70" vertex="1">
           <mxGeometry x="76.72307692307704" y="59.90192307692298" width="61.53846153846153" height="169.61538461538464" as="geometry" />
@@ -73,7 +75,7 @@
         <mxCell id="Int-WWW-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Int-WWW-3" vertex="1">
           <mxGeometry x="-13.933054393305438" y="97.69772727272725" width="111.4644351464435" height="27.91363636363636" as="geometry" />
         </mxCell>
-        <mxCell id="Int-WWW-eth0ip" value="137.205.98.155" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Int-WWW-3" vertex="1">
+        <mxCell id="Int-WWW-eth0ip" value="192.168.6.1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Int-WWW-3" vertex="1">
           <mxGeometry x="-41.79916317991631" y="97.69772727272725" width="111.4644351464435" height="27.91363636363636" as="geometry" />
         </mxCell>
         <mxCell id="Int-WWW-hostname" value="Int-WWW" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="Int-WWW-3" vertex="1">
@@ -97,7 +99,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-94" value="SMTP Relay" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="LpydgIhb9bR34k0oGJzF-90" vertex="1">
-          <mxGeometry x="148" y="160" width="82" height="120" as="geometry" />
+          <mxGeometry x="128" y="160" width="82" height="120" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-211" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=74.80769230769232;exitPerimeter=0;endArrow=none;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="LpydgIhb9bR34k0oGJzF-90" source="LpydgIhb9bR34k0oGJzF-93" target="LpydgIhb9bR34k0oGJzF-12" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -110,7 +112,7 @@
         <mxCell id="LpydgIhb9bR34k0oGJzF-260" value="" style="group" parent="LpydgIhb9bR34k0oGJzF-262" vertex="1" connectable="0">
           <mxGeometry y="5.684341886080802e-14" width="48.56999999999999" height="98.38999999999999" as="geometry" />
         </mxCell>
-        <mxCell id="LpydgIhb9bR34k0oGJzF-13" value="137.205.37.201" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="LpydgIhb9bR34k0oGJzF-260" vertex="1">
+        <mxCell id="LpydgIhb9bR34k0oGJzF-13" value="192.168.2.1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="LpydgIhb9bR34k0oGJzF-260" vertex="1">
           <mxGeometry x="-37.00999999999999" y="37.00999999999999" width="98.39" height="24.37" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-259" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="LpydgIhb9bR34k0oGJzF-260" vertex="1">
@@ -159,7 +161,7 @@
           <mxGeometry x="648" y="140" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-9" value="Border-Router" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" parent="LpydgIhb9bR34k0oGJzF-90" vertex="1">
-          <mxGeometry x="167.02" y="440" width="166" height="70" as="geometry" />
+          <mxGeometry x="151" y="440" width="166" height="70" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-200" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=55;entryPerimeter=0;endArrow=none;endFill=0;" parent="LpydgIhb9bR34k0oGJzF-90" source="LpydgIhb9bR34k0oGJzF-9" target="LpydgIhb9bR34k0oGJzF-92" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -210,66 +212,66 @@
           </mxCell>
         </object>
         <mxCell id="LpydgIhb9bR34k0oGJzF-2" value="" style="group;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="930" y="2220" width="1099" height="530" as="geometry" />
+          <mxGeometry x="900" y="2220" width="1129" height="530" as="geometry" />
         </mxCell>
         <mxCell id="Ext-WWW-3" value="" style="group" parent="LpydgIhb9bR34k0oGJzF-2" vertex="1" connectable="0">
-          <mxGeometry x="146.01417183348096" y="265" width="944.2249778565102" height="265" as="geometry" />
+          <mxGeometry x="150" y="265" width="970" height="265" as="geometry" />
         </mxCell>
         <mxCell id="Ext-WWW-ports" value="service apache2 start" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ACF3CF;" parent="Ext-WWW-3" vertex="1">
-          <mxGeometry x="58.40566873339238" y="88.33333333333333" width="116.81133746678476" height="88.33333333333333" as="geometry" />
+          <mxGeometry x="60" y="88.33333333333334" width="120" height="88.33333333333334" as="geometry" />
         </mxCell>
         <mxCell id="Ext-WWW-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Ext-WWW-3" vertex="1">
-          <mxGeometry x="-14.601417183348095" y="103.05555555555556" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="-15" y="103.05555555555556" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Ext-WWW-eth0ip" value="201.224.19.7" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Ext-WWW-3" vertex="1">
-          <mxGeometry x="-43.80425155004429" y="103.05555555555556" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="-45" y="103.05555555555556" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Ext-WWW-hostname" value="Ext-WWW" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="Ext-WWW-3" vertex="1">
-          <mxGeometry x="58.40566873339238" y="58.88888888888889" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="60" y="58.8888888888889" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Ext-DNS-3" value="" style="group" parent="LpydgIhb9bR34k0oGJzF-2" vertex="1" connectable="0">
-          <mxGeometry x="622.9937998228521" y="274.81481481481484" width="232.64924712134635" height="215.9259259259259" as="geometry" />
+          <mxGeometry x="640" y="274.81481481481484" width="239" height="215.92592592592592" as="geometry" />
         </mxCell>
         <mxCell id="Ext-DNS-ports" value="service dnsmasq start" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ACF3CF;" parent="Ext-DNS-3" vertex="1">
-          <mxGeometry x="58.40566873339238" y="88.33333333333333" width="116.81133746678476" height="88.33333333333333" as="geometry" />
+          <mxGeometry x="60" y="88.33333333333334" width="120" height="88.33333333333334" as="geometry" />
         </mxCell>
         <mxCell id="Ext-DNS-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Ext-DNS-3" vertex="1">
-          <mxGeometry x="-14.601417183348095" y="103.05555555555556" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="-15" y="103.05555555555556" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Ext-DNS-eth0ip" value="8.8.8.8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Ext-DNS-3" vertex="1">
-          <mxGeometry x="-43.80425155004429" y="103.05555555555556" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="-45" y="103.05555555555556" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Ext-DNS-hostname" value="Ext-DNS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="Ext-DNS-3" vertex="1">
-          <mxGeometry x="58.40566873339238" y="58.88888888888889" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="60" y="58.8888888888889" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Ext-Office-3" value="" style="group" parent="LpydgIhb9bR34k0oGJzF-2" vertex="1" connectable="0">
-          <mxGeometry x="866.3507528786537" y="274.81481481481484" width="232.64924712134635" height="215.9259259259259" as="geometry" />
+          <mxGeometry x="890" y="274.81481481481484" width="239" height="215.92592592592592" as="geometry" />
         </mxCell>
         <mxCell id="Ext-Office-ports" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ACF3CF;" parent="Ext-Office-3" vertex="1">
-          <mxGeometry x="58.40566873339238" y="88.33333333333333" width="116.81133746678476" height="88.33333333333333" as="geometry" />
+          <mxGeometry x="60" y="88.33333333333334" width="120" height="88.33333333333334" as="geometry" />
         </mxCell>
         <mxCell id="Ext-Office-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Ext-Office-3" vertex="1">
-          <mxGeometry x="-14.601417183348095" y="103.05555555555556" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="-15" y="103.05555555555556" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Ext-Office-eth0ip" value="22.39.224.18" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Ext-Office-3" vertex="1">
-          <mxGeometry x="-43.80425155004429" y="103.05555555555556" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="-45" y="103.05555555555556" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Ext-Office-hostname" value="Ext-Office" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="Ext-Office-3" vertex="1">
-          <mxGeometry x="58.40566873339238" y="58.88888888888889" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="60" y="58.8888888888889" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <object label="201.224.0.0/16" id="201.224.0.0/16">
           <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="LpydgIhb9bR34k0oGJzF-2" vertex="1">
-            <mxGeometry x="102.20992028343667" y="127.5925925925926" width="116.81133746678476" height="58.88888888888889" as="geometry" />
+            <mxGeometry x="105" y="127.5925925925926" width="120" height="58.8888888888889" as="geometry" />
           </mxCell>
         </object>
         <object label="8.8.8.0/24" id="8.8.8.0/24">
           <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="LpydgIhb9bR34k0oGJzF-2" vertex="1">
-            <mxGeometry x="453.6173604960142" y="363.14814814814815" width="116.81133746678476" height="58.88888888888889" as="geometry" />
+            <mxGeometry x="466" y="363.14814814814815" width="120" height="58.8888888888889" as="geometry" />
           </mxCell>
         </object>
         <object label="22.39.224.16/30" id="22.39.224.16/30">
           <mxCell style="rounded=1;whiteSpace=wrap;html=1;" parent="LpydgIhb9bR34k0oGJzF-2" vertex="1">
-            <mxGeometry x="822.5465013286093" y="127.5925925925926" width="116.81133746678476" height="58.88888888888889" as="geometry" />
+            <mxGeometry x="845" y="127.5925925925926" width="120" height="58.8888888888889" as="geometry" />
           </mxCell>
         </object>
         <object label="" source="201.224.0.0/16" target="Ext-WWW-eth0ip" id="3ca74807009f3c9ca79c01aa8f99e6e6">
@@ -320,43 +322,43 @@
           </mxCell>
         </object>
         <mxCell id="Tgfa9BKaGz3k2qAlnIK7-5" value="" style="group" parent="LpydgIhb9bR34k0oGJzF-2" vertex="1" connectable="0">
-          <mxGeometry x="395.2116917626218" y="39.25925925925926" width="232.64924712134635" height="235.55555555555557" as="geometry" />
+          <mxGeometry x="406" y="39.25925925925926" width="239" height="235.5555555555556" as="geometry" />
         </mxCell>
         <mxCell id="Internet-3" value="" style="group" parent="Tgfa9BKaGz3k2qAlnIK7-5" vertex="1" connectable="0">
-          <mxGeometry width="232.64924712134635" height="215.9259259259259" as="geometry" />
+          <mxGeometry width="239" height="215.92592592592592" as="geometry" />
         </mxCell>
         <mxCell id="Internet-ports" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ACF3CF;" parent="Internet-3" vertex="1">
-          <mxGeometry x="58.40566873339238" y="88.33333333333333" width="116.81133746678476" height="88.33333333333333" as="geometry" />
+          <mxGeometry x="60" y="88.33333333333334" width="120" height="88.33333333333334" as="geometry" />
         </mxCell>
         <mxCell id="Internet-eth2" value="eth2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E5D67A;rotation=-90;" parent="Internet-3" vertex="1">
-          <mxGeometry x="131.41275465013285" y="103.05555555555556" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="135" y="103.05555555555556" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Internet-eth2ip" value="22.39.224.17" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E5D67A;rotation=-90;" parent="Internet-3" vertex="1">
-          <mxGeometry x="159.64216120460586" y="103.05555555555556" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="164" y="103.05555555555556" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Internet-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Internet-3" vertex="1">
-          <mxGeometry x="-14.601417183348095" y="103.05555555555556" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="-15" y="103.05555555555556" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Internet-eth0ip" value="201.224.131.22" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Internet-3" vertex="1">
-          <mxGeometry x="-43.80425155004429" y="103.05555555555556" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="-45" y="103.05555555555556" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Internet-eth1" value="eth3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" parent="Internet-3" vertex="1">
-          <mxGeometry x="58.40566873339238" y="29.444444444444446" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="60" y="29.44444444444445" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Internet-eth1ip" value="137.205.157.254" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" parent="Internet-3" vertex="1">
-          <mxGeometry x="58.40566873339238" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="60" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Internet-hostname" value="Internet" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="Internet-3" vertex="1">
-          <mxGeometry x="58.40566873339238" y="58.88888888888889" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="60" y="58.8888888888889" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Tgfa9BKaGz3k2qAlnIK7-3" value="8.8.8,1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#93DCE1;" parent="Tgfa9BKaGz3k2qAlnIK7-5" vertex="1">
-          <mxGeometry x="58.40566873339238" y="206.11111111111111" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="60" y="206.11111111111111" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="Tgfa9BKaGz3k2qAlnIK7-4" value="eth 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#93DCE1;" parent="Tgfa9BKaGz3k2qAlnIK7-5" vertex="1">
-          <mxGeometry x="58.40566873339238" y="176.66666666666666" width="116.81133746678476" height="29.444444444444446" as="geometry" />
+          <mxGeometry x="60" y="176.66666666666669" width="120" height="29.44444444444445" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-3" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Zone 1 - Internet&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LpydgIhb9bR34k0oGJzF-2" vertex="1">
-          <mxGeometry x="38.93711248892826" y="19.63" width="194.68556244464128" height="50.37" as="geometry" />
+          <mxGeometry x="40" y="19.63" width="200" height="50.37" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="Internet-eth1ip" target="LpydgIhb9bR34k0oGJzF-9" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -374,7 +376,7 @@
         <mxCell id="LpydgIhb9bR34k0oGJzF-160" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A1B9FC;" parent="LpydgIhb9bR34k0oGJzF-163" vertex="1">
           <mxGeometry x="29.99692307692294" y="-10" width="840" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="LpydgIhb9bR34k0oGJzF-161" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Zone 4 - Servers&lt;br&gt;192.168.4.0./24&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LpydgIhb9bR34k0oGJzF-163" vertex="1">
+        <mxCell id="LpydgIhb9bR34k0oGJzF-161" value="&lt;font style=&quot;font-size: 15px&quot;&gt;Zone 4 - Servers&lt;br&gt;192.168.4.0./24&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LpydgIhb9bR34k0oGJzF-163" vertex="1">
           <mxGeometry x="39" y="300" width="271" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-215" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=61.53846153846153;exitDy=94.8076923076923;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="LpydgIhb9bR34k0oGJzF-163" source="LpydgIhb9bR34k0oGJzF-162" target="Int-DNS-ports" edge="1">
@@ -392,7 +394,7 @@
         <mxCell id="Int-DNS-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Int-DNS-3" vertex="1">
           <mxGeometry x="-15" y="105" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Int-DNS-eth0ip" value="137.205.41.131" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Int-DNS-3" vertex="1">
+        <mxCell id="Int-DNS-eth0ip" value="192.168.4.1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Int-DNS-3" vertex="1">
           <mxGeometry x="-45" y="105" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Int-DNS-hostname" value="Int-DNS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="Int-DNS-3" vertex="1">
@@ -407,7 +409,7 @@
         <mxCell id="LDAP-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="LDAP-3" vertex="1">
           <mxGeometry x="-15" y="105" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LDAP-eth0ip" value="137.205.34.21" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="LDAP-3" vertex="1">
+        <mxCell id="LDAP-eth0ip" value="192.168.4.2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="LDAP-3" vertex="1">
           <mxGeometry x="-45" y="105" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="LDAP-hostname" value="LDAP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="LDAP-3" vertex="1">
@@ -422,7 +424,7 @@
         <mxCell id="Mail-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Mail-3" vertex="1">
           <mxGeometry x="-15" y="105" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Mail-eth0ip" value="137.205.139.114" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Mail-3" vertex="1">
+        <mxCell id="Mail-eth0ip" value="192.168.4.3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Mail-3" vertex="1">
           <mxGeometry x="-45" y="105" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Mail-hostname" value="Mail" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="Mail-3" vertex="1">
@@ -449,7 +451,7 @@
         <mxCell id="Staff-2-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Staff-2-3" vertex="1">
           <mxGeometry x="-15" y="105" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Staff-2-eth0ip" value="137.205.69.201" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Staff-2-3" vertex="1">
+        <mxCell id="Staff-2-eth0ip" value="192.168.3.2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Staff-2-3" vertex="1">
           <mxGeometry x="-45" y="105" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Staff-2-hostname" value="Staff-2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="Staff-2-3" vertex="1">
@@ -464,7 +466,7 @@
         <mxCell id="Staff-3-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="LpydgIhb9bR34k0oGJzF-164" vertex="1">
           <mxGeometry x="-14.999999999999996" y="45" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Staff-3-eth0ip" value="137.205.99.159" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="LpydgIhb9bR34k0oGJzF-164" vertex="1">
+        <mxCell id="Staff-3-eth0ip" value="192.168.3.3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="LpydgIhb9bR34k0oGJzF-164" vertex="1">
           <mxGeometry x="-45" y="45" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Staff-3-hostname" value="Staff-3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="LpydgIhb9bR34k0oGJzF-164" vertex="1">
@@ -479,13 +481,13 @@
         <mxCell id="Staff-1-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Staff-1-3" vertex="1">
           <mxGeometry x="-15" y="105" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Staff-1-eth0ip" value="137.205.81.121" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Staff-1-3" vertex="1">
+        <mxCell id="Staff-1-eth0ip" value="192.168.3.1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Staff-1-3" vertex="1">
           <mxGeometry x="-45" y="105" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Staff-1-hostname" value="Staff-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="Staff-1-3" vertex="1">
           <mxGeometry x="60" y="60" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LpydgIhb9bR34k0oGJzF-168" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Zone 3 - Employees subnet 192.168.3.0/19&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LpydgIhb9bR34k0oGJzF-178" vertex="1">
+        <mxCell id="LpydgIhb9bR34k0oGJzF-168" value="&lt;font style=&quot;font-size: 15px&quot;&gt;Zone 3 - Employees subnet 192.168.3.0/24&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LpydgIhb9bR34k0oGJzF-178" vertex="1">
           <mxGeometry x="9.23" y="500" width="200" height="40" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-174" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=120;exitDy=50;exitPerimeter=0;endArrow=none;endFill=0;" parent="LpydgIhb9bR34k0oGJzF-178" source="LpydgIhb9bR34k0oGJzF-173" edge="1">
@@ -532,7 +534,7 @@
         <mxCell id="LpydgIhb9bR34k0oGJzF-181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=74.80769230769232;exitPerimeter=0;endArrow=none;endFill=0;" parent="1" source="LpydgIhb9bR34k0oGJzF-162" target="LpydgIhb9bR34k0oGJzF-179" edge="1">
           <mxGeometry x="1240" y="1330" as="geometry" />
         </mxCell>
-        <mxCell id="LpydgIhb9bR34k0oGJzF-184" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Zone 5 - Mangerial subnet&lt;br&gt;192.168.5.0/24&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="LpydgIhb9bR34k0oGJzF-184" value="&lt;font style=&quot;font-size: 15px&quot;&gt;Zone 5 - Mangerial subnet&lt;br&gt;192.168.5.0/24&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1916.43" y="1340" width="276.38" height="36.4" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-171" value="" style="group;fillColor=#fad9d5;strokeColor=#ae4132;" parent="1" vertex="1" connectable="0">
@@ -550,7 +552,7 @@
         <mxCell id="OpenVPN-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="OpenVPN-3" vertex="1">
           <mxGeometry x="-15" y="105" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="OpenVPN-eth0ip" value="137.205.89.215" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="OpenVPN-3" vertex="1">
+        <mxCell id="OpenVPN-eth0ip" value="192.168.3.252" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="OpenVPN-3" vertex="1">
           <mxGeometry x="-45" y="105" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OpenVPN-hostname" value="OpenVPN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="OpenVPN-3" vertex="1">
