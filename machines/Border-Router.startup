@@ -1,0 +1,7 @@
+ifup eth0
+
+iptables -F
+iptables -t nat -F 
+iptables -t nat -A POSTROUTING\
+    -j SNAT
+    --to-source 13.205.157.254

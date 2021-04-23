@@ -1,0 +1,22 @@
+ifup eth0
+ifup eth1
+ifup eth2
+ifup eth3
+
+
+iptables -F
+iptables -t nat -F
+#drop by default, whitelist vs blacklist
+iptables -P DROP
+#openvpn rule
+#smtp rule
+
+
+iptables -A FORWARD \
+    -m multiport \
+    -m state \
+    -p tcp \
+    --dport 80,443 \
+    --state ESTABLISHED,RELATED \
+    -i eth0 \
+    -j ACCEPT
