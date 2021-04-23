@@ -11,6 +11,11 @@ iptables -P DROP
 #openvpn rule
 #smtp rule
 
+#prevent http responses from int-www out the network
+iptables -A FORWARD \ 
+    -s 192.168.6.0/24
+    -j DROP
+
 #allowing existing http(s) traffic
 iptables -A FORWARD \
     -m multiport \
