@@ -11,7 +11,7 @@ iptables -P DROP
 #openvpn rule
 #smtp rule
 
-
+#allowing existing http(s) traffic
 iptables -A FORWARD \
     -m multiport \
     -m state \
