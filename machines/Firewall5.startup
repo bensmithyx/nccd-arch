@@ -1,1 +1,14 @@
 ifup eth0
+ifup eth1
+
+iptables -F 
+iptables -t nat -F
+iptables -P DROP
+
+iptables -A FORWARD \
+    -m state \
+    --state ESTABLISHED,RELATED \
+    -m multiport \
+    -p tcp \
+    --sport 80,443,8080 \
+    -j ACCEPT
