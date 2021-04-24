@@ -3,8 +3,10 @@ iface lo inet loopback
 
 auto eth0
 iface eth0 inet static
-	address 192.168.3.252
+	address 192.168.3.250
 	netmask 255.255.255.0
 	broadcast 192.168.3.255
-	gateway 192.168.3.254
-	hwaddress ether dd:80:fd:ac:03:fc
+	gateway 192.168.3.252
+	hwaddress ether dd:80:fd:ac:03:fa
+
+#idk how openvpn works, need another interface?	

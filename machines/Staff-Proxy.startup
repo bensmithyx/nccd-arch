@@ -1,1 +1,27 @@
 ifup eth0
+ifup eth1
+ifup eth2
+
+iptables -F
+iptables -t nat -F 
+iptables -P
+
+#ldap udp+tcp port 389
+iptables -A FORWARD \
+    -p tcp \
+    -d 192.168.4.2 \
+    --dport 389 \
+    -i eth1 \
+    -j ACCEPT 
+
+iptables -A FORWARD \
+    -p udp \
+    -d 192.168.4.2 \
+    --dport 389 \
+    -i eth1 \
+    -j ACCEPT
+
+
+
+#prevent openvpn accessing staff machines
+
