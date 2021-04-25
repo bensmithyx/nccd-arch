@@ -1,2 +1,11 @@
 auto lo
 iface lo inet loopback
+
+
+auto eth0
+iface eth0 inet static
+	address 201.224.19.7
+	netmask 255.255.0.0
+    gateway 201.224.131.22
+	broadcast 201.224.255.255
+	hwaddress ether dd:80:16:27:e0:12               

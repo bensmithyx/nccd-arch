@@ -1,2 +1,11 @@
 auto lo
 iface lo inet loopback
+
+
+auto eth0
+iface eth0 inet static
+	address 8.8.8.8
+	netmask 255.255.0.0
+    gateway 8.8.8.1
+	broadcast 8.8.255.255
+	hwaddress ether dd:80:08:08:08:08
