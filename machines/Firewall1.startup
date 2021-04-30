@@ -13,7 +13,7 @@ iptables -P DROP
 
 #prevent http responses from int-www out the network
 iptables -A FORWARD \ 
-    -s 192.168.6.0/24
+    -s 192.168.6.0/24 \
     -j DROP
 
 #allowing existing http(s) traffic
