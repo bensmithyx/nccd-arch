@@ -5,7 +5,7 @@ nc -v <ip address> <port>
 # Test a udp connection (probably can be done with NC, but NMAP FTW)
 
 nmap -sU -p <port> <ip address>
-
+nc -v -u <ip address> <port>
 # Test DNS Server
 
 host -t a <domain name> <ip of DNS server>
