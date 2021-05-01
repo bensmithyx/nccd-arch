@@ -1,6 +1,6 @@
-<mxfile compressed="false" host="Electron" modified="2021-05-01T14:42:01.871Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.5.1 Chrome/89.0.4389.82 Electron/12.0.1 Safari/537.36" etag="gjwOvdN0LiYc_Uc8KWw6" version="14.5.1" type="device">
+<mxfile compressed="false" host="Electron" modified="2021-05-01T15:32:27.106Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.5.1 Chrome/89.0.4389.82 Electron/12.0.1 Safari/537.36" etag="SgUzNEMcXpb-KltgjlXd" version="14.5.1" type="device">
   <diagram id="Page-1" name="Page-1">
-    <mxGraphModel dx="-616" dy="-981" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+    <mxGraphModel dx="846" dy="-202" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -378,10 +378,10 @@
         <mxCell id="Staff-2-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Staff-2-3" vertex="1">
           <mxGeometry x="-15" y="105" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Staff-2-eth0ip" value="192.168.3.2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Staff-2-3" vertex="1">
+        <mxCell id="Staff-2-eth0ip" value="192.168.3.3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="Staff-2-3" vertex="1">
           <mxGeometry x="-45" y="105" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Staff-2-hostname" value="Staff-2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="Staff-2-3" vertex="1">
+        <mxCell id="Staff-2-hostname" value="Staff-3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="Staff-2-3" vertex="1">
           <mxGeometry x="60" y="60" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-164" value="" style="group" parent="LpydgIhb9bR34k0oGJzF-178" vertex="1" connectable="0">
@@ -393,10 +393,10 @@
         <mxCell id="Staff-3-eth0" value="eth0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="LpydgIhb9bR34k0oGJzF-164" vertex="1">
           <mxGeometry x="-14.999999999999996" y="45" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Staff-3-eth0ip" value="192.168.3.3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="LpydgIhb9bR34k0oGJzF-164" vertex="1">
+        <mxCell id="Staff-3-eth0ip" value="192.168.3.2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B593E1;rotation=90;" parent="LpydgIhb9bR34k0oGJzF-164" vertex="1">
           <mxGeometry x="-45" y="45" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Staff-3-hostname" value="Staff-3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="LpydgIhb9bR34k0oGJzF-164" vertex="1">
+        <mxCell id="Staff-3-hostname" value="Staff-2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E76B6B;" parent="LpydgIhb9bR34k0oGJzF-164" vertex="1">
           <mxGeometry x="60" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Staff-1-3" value="" style="group" parent="LpydgIhb9bR34k0oGJzF-178" vertex="1" connectable="0">
@@ -417,7 +417,7 @@
         <mxCell id="LpydgIhb9bR34k0oGJzF-168" value="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;Zone 3 - Employees subnet 192.168.3.0/24&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LpydgIhb9bR34k0oGJzF-178" vertex="1">
           <mxGeometry x="9.23" y="500" width="310.77" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="LpydgIhb9bR34k0oGJzF-174" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=120;exitDy=50;exitPerimeter=0;endArrow=none;endFill=0;" parent="LpydgIhb9bR34k0oGJzF-178" source="LpydgIhb9bR34k0oGJzF-173" edge="1">
+        <mxCell id="LpydgIhb9bR34k0oGJzF-174" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=120;exitDy=50;exitPerimeter=0;endArrow=none;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="LpydgIhb9bR34k0oGJzF-178" source="LpydgIhb9bR34k0oGJzF-173" edge="1" target="Staff-2-eth0ip">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="847.5369230769229" y="180" as="targetPoint" />
           </mxGeometry>
@@ -428,10 +428,10 @@
         <mxCell id="LpydgIhb9bR34k0oGJzF-173" value="Staff-Proxy" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="LpydgIhb9bR34k0oGJzF-178" vertex="1">
           <mxGeometry x="139.9969230769229" y="194.81" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="LpydgIhb9bR34k0oGJzF-175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=120;entryDy=50;entryPerimeter=0;endArrow=none;endFill=0;" parent="LpydgIhb9bR34k0oGJzF-178" source="Staff-3-ports" target="LpydgIhb9bR34k0oGJzF-173" edge="1">
+        <mxCell id="LpydgIhb9bR34k0oGJzF-175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=120;entryDy=50;entryPerimeter=0;endArrow=none;endFill=0;" parent="LpydgIhb9bR34k0oGJzF-178" source="Staff-3-eth0ip" target="LpydgIhb9bR34k0oGJzF-173" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LpydgIhb9bR34k0oGJzF-176" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=120;entryDy=50;entryPerimeter=0;endArrow=none;endFill=0;" parent="LpydgIhb9bR34k0oGJzF-178" source="Staff-1-ports" target="LpydgIhb9bR34k0oGJzF-173" edge="1">
+        <mxCell id="LpydgIhb9bR34k0oGJzF-176" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=120;entryDy=50;entryPerimeter=0;endArrow=none;endFill=0;" parent="LpydgIhb9bR34k0oGJzF-178" source="Staff-1-eth0ip" target="LpydgIhb9bR34k0oGJzF-173" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LpydgIhb9bR34k0oGJzF-177" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#ffe6cc;strokeColor=#d79b00;rotation=90;" parent="LpydgIhb9bR34k0oGJzF-178" vertex="1">
