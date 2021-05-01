@@ -6,6 +6,7 @@ iptables -t nat -F
 iptables -P FORWARD DROP
 iptables -P INPUT DROP
 iptables -P OUTPUT DROP
+
 #allow responses back from int-www
 iptables -A FORWARD \
     -m state \
@@ -18,4 +19,7 @@ iptables -A FORWARD \
     -m multiport \
     --dport 80,443 \
     -s 192.168.3.0/24
-    -j ACCEPTiptables -F
+    -j ACCEPT
+    
+
+
