@@ -4,6 +4,6 @@ ifup eth1
 iptables -F
 iptables -t nat -F 
 iptables -t nat -A POSTROUTING \
-    -o eth0
-    -j SNAT
+    -o eth0 \
+    -j SNAT \
     --to-source 137.205.157.254

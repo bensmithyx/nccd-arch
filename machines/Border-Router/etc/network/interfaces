@@ -8,7 +8,7 @@ iface eth0 inet static
 	netmask 255.255.0.0
 	gateway 137.205.157.254
 	broadcast 137.205.255.255
-	hwaddress ether dd:80:89:cd:9d:fd
+	
 
 
 auto eth1
@@ -16,4 +16,4 @@ iface eth1 inet static
 	address 192.168.1.254
 	netmask 255.255.255.0
 	broadcast 192.168.1.255
-	hwaddress ether dd:80:c0:a8:a0:fe                                                 
+                                             

@@ -7,7 +7,6 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	broadcast 192.168.3.255
 	gateway 192.168.3.254
-	hwaddress ether dd:80:fd:ac:03:fd
 
 auto eth1
 iface eth1 inet static
@@ -15,7 +14,6 @@ iface eth1 inet static
 	netmask 255.255.255.0
 	broadcast 192.168.3.255
 	gateway 192.168.3.254
-	hwaddress ether dd:80:fd:ac:03:fc
 
 auto eth2
 iface eth2 inet static
@@ -23,4 +21,3 @@ iface eth2 inet static
 	netmask 255.255.255.0
 	broadcast 192.168.3.255
 	gateway 192.168.3.254
-	hwaddress ether dd:80:fd:ac:03:fb

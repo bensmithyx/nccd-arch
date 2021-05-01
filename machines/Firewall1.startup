@@ -7,7 +7,9 @@ ifup eth3
 iptables -F
 iptables -t nat -F
 #drop by default, whitelist vs blacklist
-iptables -P DROP
+iptables -P FORWARD DROP
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP
 #openvpn rule
 #smtp rule
 

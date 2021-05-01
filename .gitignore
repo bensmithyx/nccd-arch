@@ -1,0 +1,2 @@
+# don't upload netkit .disk sparse files
+*.disk

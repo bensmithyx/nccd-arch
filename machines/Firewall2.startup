@@ -3,8 +3,9 @@ ifup eth1
 
 iptables -F
 iptables -t nat -F
-iptables -P DROP
-
+iptables -P FORWARD DROP
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP
 #allow responses back from int-www
 iptables -A FORWARD \
     -m state \

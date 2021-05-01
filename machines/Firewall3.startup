@@ -1,4 +1,6 @@
 ifup eth0
 iptables -F
 iptables -t nat -F
-iptables -P DROP
+iptables -P FORWARD DROP
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP

@@ -4,8 +4,9 @@ ifup eth2
 
 iptables -F
 iptables -t nat -F 
-iptables -P
-
+iptables -P FORWARD DROP
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP
 #ldap udp+tcp port 389
 iptables -A FORWARD \
     -p tcp \
