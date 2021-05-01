@@ -3,9 +3,9 @@ ifup eth1
 
 iptables -F 
 iptables -t nat -F
-iptables -P FORWARD DROP
-iptables -P INPUT DROP
-iptables -P OUTPUT DROP
+# iptables -P FORWARD DROP
+# iptables -P INPUT DROP
+# iptables -P OUTPUT DROP
 iptables -A FORWARD \
     -m state \
     --state ESTABLISHED,RELATED \
@@ -13,3 +13,4 @@ iptables -A FORWARD \
     -p tcp \
     --sport 80,443,8080 \
     -j ACCEPT
+

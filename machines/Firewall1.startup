@@ -7,9 +7,9 @@ ifup eth3
 iptables -F
 iptables -t nat -F
 #drop by default, whitelist vs blacklist
-iptables -P FORWARD DROP
-iptables -P INPUT DROP
-iptables -P OUTPUT DROP
+# iptables -P FORWARD DROP
+# iptables -P INPUT DROP
+# iptables -P OUTPUT DROP
 #openvpn rule
 #smtp rule
 
@@ -27,3 +27,5 @@ iptables -A FORWARD \
     --state ESTABLISHED,RELATED \
     -i eth0 \
     -j ACCEPT
+
+
