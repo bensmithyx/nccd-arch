@@ -1,4 +1,5 @@
 ifup eth0
+ifup eth1
 iptables -F
 iptables -t nat -F
 # iptables -P FORWARD DROP

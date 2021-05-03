@@ -1,7 +1,5 @@
 ifup eth0
 ifup eth1
-ifup eth2
-ifup eth3
 
 
 iptables -F
