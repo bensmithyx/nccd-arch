@@ -11,5 +11,5 @@ iface lo inet loopback
 
 auto eth0
 iface eth0 inet dhcp
-	hwaddress ether 02:60:ac:9a:bc:01
+	hwaddress ether 00:00:00:00:00:06
 
