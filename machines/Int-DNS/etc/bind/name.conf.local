@@ -1,0 +1,9 @@
+zone "Employees" IN {
+type master;
+file "/etc/bind/staff1.meme.cyber.test";
+};
+
+zone "Employees" IN {
+type master;
+file "/etc/bind/staff2.meme.cyber.test";
+};
