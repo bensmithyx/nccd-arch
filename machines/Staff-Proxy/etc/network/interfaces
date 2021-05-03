@@ -3,20 +3,17 @@ iface lo inet loopback
 
 auto eth0
 iface eth0 inet static
-	address 192.168.3.250
-	netmask 255.255.255.0
-	broadcast 192.168.3.255
-	gateway 192.168.3.254
+    address 172.16.7.253
+	gateway 172.16.7.254
+	netmask 255.255.248.0
+	broadcast 172.16.7.255
+	hwaddress ether 00:1F:F1:BE:9B:56
+
+
 
 auto eth1
 iface eth1 inet static
-	address 192.168.3.251
+    address 10.10.0.254
 	netmask 255.255.255.0
-	broadcast 192.168.3.255
-
-auto eth2
-iface eth2 inet static
-	address 192.168.3.252
-	netmask 255.255.255.0
-	broadcast 192.168.3.255
-	hwaddress ether 02:60:ac:00:97:46
+	broadcast 10.10.0.255
+	hwaddress ether 00:1F:F1:BE:9B:54
