@@ -9,3 +9,9 @@ iface eth0 inet static
 	hwaddress ether 00:1F:F3:BE:9B:57
 
 
+auto eth1
+iface eth1 inet static
+	address 192.168.0.4
+	netmask 255.255.255.0
+    gateway 192.168.0.254
+	broadcast 192.168.0.255

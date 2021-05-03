@@ -1,14 +1,12 @@
-ip link add name br0 type bridge
-ip link set dev br0 up 
+ifup eth0
+ifup eth1
+ifup eth2
+ifup eth3
 
-ip link set dev eth0 up
-ip link set dev eth1 up
-ip link set dev eth2 up
-ip link set dev eth4 up
-
-
-ip link set dev eth0 master br0
-ip link set dev eth1 master br0
-ip link set dev eth2 master br0
-ip link set dev eth4 master br0
-
+route add -net 172.16.0.0/21 gw 192.168.0.4
+route add -net 10.0.0.0/24 gw 192.168.0.4
+route add -net 196.168.4.0/24 gw 192.168.0.3
+route add -net 192.168.2.0/24 gw 192.168.0.1
+route add -net 192.168.6.0/24 gw 192.168.0.1
+route add -net 192.168.5.0/24 gw 192.168.0.2
+route add -net 192.168.8.0/24 gw 192.168.0.2
