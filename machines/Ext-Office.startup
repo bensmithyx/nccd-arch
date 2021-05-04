@@ -1,1 +1,6 @@
-ifup eth0
+ifconfig eth0 hw ether 00:00:00:00:00:07
+
+
+ifconfig eth0 22.39.224.18/30
+
+route add default gw 22.39.224.17

@@ -1,0 +1,8 @@
+ifconfig eth0 hw ether 00:00:00:00:00:13
+ifconfig eth1 hw ether 00:00:00:00:00:14
+
+ifconfig eth0 192.168.8.254/24
+ifconfig eth1 192.168.5.254/24
+
+route add default via 192.168.8.1
+route add -net 192.168.8.0/24 192.168.0.2

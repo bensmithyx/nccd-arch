@@ -1,2 +1,7 @@
-ifup eth0
-ifup eth1
+ifconfig eth0 hw ether 00:00:00:00:00:04
+ifconfig eth1 hw ether 00:00:00:00:00:05
+
+ifconfig eth0 192.168.2.3/24
+ifconfig eth1 192.168.8.1/24
+
+route add default gw 192.168.8.254
