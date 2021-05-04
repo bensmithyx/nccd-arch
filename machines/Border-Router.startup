@@ -1,5 +1,10 @@
-ifup eth0
-ifup eth1
+ifconfig eth0 hw ether 00:00:00:00:00:01
+ifconfig eth1 hw ether 00:00:00:00:00:02
+
+ifconfig eth0 137.205.157.253/16
+ifconfig eth1 192.168.1.254/24
+
+# route add default gw 192.168.1.1
 
 iptables -F
 iptables -t nat -F 
