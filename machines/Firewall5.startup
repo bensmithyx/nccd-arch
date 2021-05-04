@@ -11,4 +11,4 @@ iptables -t nat -F
 # iptables -P OUTPUT DROP
 #iptables -A FORWARD -m state --state ESTABLISHED,RELATED -m multiport -p tcp --sport 80,443,8080 -j ACCEPT
 
-iptables -t nat -A POSTROUTING -i eth1 -o eth0 -j MASQUERADE
+iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
