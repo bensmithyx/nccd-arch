@@ -1,14 +1,2 @@
 ifup eth0
 ifup eth1
-
-#route add -net 172.16.0.0/21 gw 172.16.7.253
-route add -net 10.0.0.0/24 gw 172.16.7.253
-
-iptables -F 
-iptables -t nat -F
-# iptables -P FORWARD DROP
-# iptables -P INPUT DROP
-# iptables -P OUTPUT DROP
-#iptables -A FORWARD -m state --state ESTABLISHED,RELATED -m multiport -p tcp --sport 80,443,8080 -j ACCEPT
-
-iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE

@@ -6,6 +6,6 @@ iptables -t nat -F
 # iptables -P INPUT DROP
 # iptables -P OUTPUT DROP
 route add -net 192.168.4.0/24 gw 196.168.0.254
-route add -net 172.16.0.0/21 gw 196.168.0.254
+route add -net 172.16.0.0/21 gw  192.168.0.4
 route add -net 192.168.5.0/24 gw 196.168.0.254
-route add -net 10.0.0.0/24 gw 196.168.0.254
+route add -net 10.0.0.0/24 gw  192.168.0.4
