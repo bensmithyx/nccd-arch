@@ -8,5 +8,5 @@ ls | grep startup | sed 's/.startup//g' | xargs -I % echo %: > lab.dep
 for i in $(find . -maxdepth 1 -type d); do echo 'placeholder' > $i/placeholder; done
 ```
 ```bash
-find . -name "placeholder" -delete
+find . -name "placeholder" -type f -delete
 ```
