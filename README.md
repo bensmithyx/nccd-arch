@@ -5,5 +5,5 @@ ls | grep startup | sed 's/.startup//g' | xargs -I % echo %: > lab.dep
 ```
 
 ```bash
-ls | grep startup | sed 's/.startup//g' | xargs -I % echo 'placeholder' > %/placeholder
+for i in $(find . -maxdepth 1 -type d); do echo 'placeholder' > $i/placeholder; done
 ```
