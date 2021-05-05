@@ -1,0 +1,28 @@
+
+Border-Router:
+DHCP: Firewall5
+DMZ-IDS:
+Ext-DNS:
+Ext-Office:
+Ext-WWW:
+Firewall1:
+Firewall2:
+Firewall3:
+Firewall4:
+Firewall5:
+Firewall6:
+Firewall7:
+IDS-Manager:
+Int-DNS:
+Int-Router:
+Int-WWW:
+Internet:
+LDAP:
+Mail:
+OpenVPN: DHCP
+SMTP-Relay:
+Squid:
+Staff-1: DHCP
+Staff-2: DHCP
+Staff-3: DHCP
+Staff-Proxy: DHCP

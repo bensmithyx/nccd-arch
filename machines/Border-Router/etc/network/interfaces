@@ -1,0 +1,19 @@
+auto lo
+iface lo inet loopback
+
+#interface pointing external
+auto eth0
+iface eth0 inet static
+	address 137.205.157.253
+	netmask 255.255.0.0
+	gateway 137.205.157.254
+	broadcast 137.205.255.255
+	
+
+
+auto eth1
+iface eth1 inet static
+	address 192.168.1.254
+	netmask 255.255.255.0
+	broadcast 192.168.1.255
+                                             

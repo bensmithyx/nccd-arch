@@ -1,0 +1,15 @@
+ifup eth0
+ifup eth1
+
+iptables -F
+iptables -t nat -F
+# iptables -P FORWARD DROP
+# iptables -P INPUT DROP
+# iptables -P OUTPUT DROP
+
+#allow responses back from int-www
+iptables -A FORWARD -m state --state ESTABLISHED, RELATED -m multiport -i eth1
+
+#allow http requests from staff+vpn
+iptables -A FORWARD -m multiport --dport 80,443 -s 192.168.3.0/24 -j ACCEPT
+    
