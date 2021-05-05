@@ -1,2 +1,0 @@
-ifconfig eth0 192.168.4.2/24 up
-route add default gw 192.168.4.254 dev eth0

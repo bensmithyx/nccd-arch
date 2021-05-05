@@ -1,4 +1,0 @@
-ifconfig eth0 172.16.7.253/21 up
-route add default gw 172.16.7.254 dev eth0
-
-systemctl start dnsmasq
