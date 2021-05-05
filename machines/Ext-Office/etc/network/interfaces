@@ -5,5 +5,4 @@ auto eth0
 iface eth0 inet static
 	address 22.39.224.18
 	netmask 255.255.255.252
-    gateway 22.39.224.17
 	broadcast 22.39.224.19

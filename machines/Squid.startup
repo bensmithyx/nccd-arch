@@ -1,4 +1,2 @@
 ifup eth0
 ifup eth1
-
-systemctl start suquid

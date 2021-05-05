@@ -1,2 +1,0 @@
-ifup eth0
-systemctl start dnsmasq
