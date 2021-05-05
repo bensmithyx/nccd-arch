@@ -1,7 +1,4 @@
-ifconfig eth0 hw ether 00:00:00:00:00:03
-
-ifconfig eth0 172.16.7.253/21
-
-route add default gw 172.16.7.254
+ifconfig eth0 172.16.7.253/21 up
+route add default gw 172.16.7.254 dev eth0
 
 systemctl start dnsmasq

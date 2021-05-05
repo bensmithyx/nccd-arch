@@ -1,3 +1,0 @@
-ifconfig eth0 hw ether 00:00:00:00:00:27
-dhclient eth0
-

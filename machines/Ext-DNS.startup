@@ -1,5 +1,0 @@
-ifconfig eth0 hw ether 00:00:00:00:00:06
-
-ifconfig eth0 8.8.8.8/16
-
-route add default gw 8.8.8.1

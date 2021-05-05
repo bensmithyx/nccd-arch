@@ -1,24 +1,6 @@
-ifconfig eth0 hw ether 00:00:00:00:00:09
-ifconfig eth1 hw ether 00:00:00:00:00:0A
-
-ifconfig eth0 192.168.1.1/24
-ifconfig eth1 192.168.2.254/24
-
-route add default gw 192.168.1.254
-
-iptables -F
-iptables -t nat -F
-#drop by default, whitelist vs blacklist
-# iptables -P FORWARD DROP
-# iptables -P INPUT DROP
-# iptables -P OUTPUT DROP
-#openvpn rule
-#smtp rule
-
-#prevent http responses from int-www out the network
-iptables -A FORWARD -s 192.168.6.0/24 -j DROP
-
-#allowing existing http(s) traffic
-iptables -A FORWARD -m multiport -m state -p tcp  --dport 80,443 --state ESTABLISHED,RELATED -i eth0 -j ACCEPT
-iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-
+ifconfig eth0 192.168.1.254/24 up
+ifconfig eth1 192.168.2.254/24 up
+ifconfig eth2 192.168.8.100/24 up
+route add default gw 192.168.1.253 dev eth0
+route add -net 192.168.6.0/24 gw 192.168.2.2 dev eth1
+route add -net 192.168.8.0/24 gw 192.168.8.1 dev eth2

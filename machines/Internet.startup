@@ -1,11 +1,5 @@
-ifconfig eth0 hw ether 00:00:00:00:00:1A
-ifconfig eth1 hw ether 00:00:00:00:00:1B
-ifconfig eth2 hw ether 00:00:00:00:00:1C
-ifconfig eth3 hw ether 00:00:00:00:00:1D
-
-ifconfig eth0 201.224.131.22/16
-ifconfig eth1 8.8.8.1/16
-ifconfig eth2 22.39.224.17/30
-ifconfig eth3 137.205.157.254/16
-
-route add default gw 137.205.157.253
+ifconfig eth0 201.224.131.22/16 up
+ifconfig eth1 8.8.8.1/16 up
+ifconfig eth2 22.39.224.17/16 up
+ifconfig eth3 137.205.157.254/16 up
+route add default gw 137.205.157.253 dev eth3

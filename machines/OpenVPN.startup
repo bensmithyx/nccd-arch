@@ -1,6 +1,3 @@
-ifconfig eth0 hw ether 00:00:00:00:00:20
-ifconfig eth1 hw ether 00:00:00:00:00:21
-
-ifconfig eth0 10.0.0.1/24
-#ifconfig eth1 192.168.8.1/24
-route add default gw 10.0.0.254
+ifconfig eth0 10.0.0.1/24 up
+ifconfig eth1 0.0.0.0/32 up
+route add default gw 10.0.0.254 dev eth0

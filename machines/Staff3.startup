@@ -1,0 +1,2 @@
+ifconfig eth0 172.16.0.3/21 up
+route add default gw 172.16.7.254 dev eth0
