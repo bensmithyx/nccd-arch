@@ -7,3 +7,4 @@ iface eth0 inet static
 	address 201.224.19.7
 	netmask 255.255.0.0
 	broadcast 201.224.255.255
+	gateway 201.224.131.22
