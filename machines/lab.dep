@@ -1,4 +1,3 @@
-
 Border-Router:
 DHCP: Firewall5
 DMZ-IDS:
@@ -19,10 +18,10 @@ Int-WWW:
 Internet:
 LDAP:
 Mail:
-OpenVPN: DHCP
+OpenVPN: 
 SMTP-Relay:
 Squid:
-Staff-1: DHCP
-Staff-2: DHCP
-Staff-3: DHCP
-Staff-Proxy: DHCP
+Staff-1: 
+Staff-2: 
+Staff-3: 
+Staff-Proxy: 
