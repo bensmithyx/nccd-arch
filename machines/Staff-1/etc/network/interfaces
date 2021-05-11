@@ -1,15 +1,15 @@
 auto lo
 iface lo inet loopback
 
-auto eth0
-iface eth0 inet static
-	address 172.16.0.1
-	netmask 255.255.248.0
-	gateway 172.16.7.254
-	broadcast 172.16.7.255
-	hwaddress ether 02:60:ac:00:41:41
-
 #auto eth0
-#iface eth0 inet dhcp
-#	hwaddress ether 00:00:00:00:00:06
+#iface eth0 inet static
+#	address 172.16.0.1
+#	netmask 255.255.248.0
+#	gateway 172.16.7.254
+#	broadcast 172.16.7.255
+#	hwaddress ether 02:60:ac:00:41:41
+
+auto eth0
+iface eth0 inet dhcp
+	hwaddress ether 02:60:ac:00:41:41
 
