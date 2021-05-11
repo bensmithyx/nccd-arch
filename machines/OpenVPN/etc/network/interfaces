@@ -16,4 +16,4 @@ iface eth0 inet static
 #	hwaddress ether 02:60:ac:9a:bc:09
 
 
-#idk how openvpn works, need another interface?	
+#idk how openvpn works, need another interface?
