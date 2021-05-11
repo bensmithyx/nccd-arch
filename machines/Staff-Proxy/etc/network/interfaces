@@ -9,11 +9,11 @@ iface eth0 inet static
 	broadcast 172.16.7.255
 	hwaddress ether 00:1F:F1:BE:9B:56
 
-
-
 auto eth1
 iface eth1 inet static
     address 10.0.0.254
 	netmask 255.255.255.0
 	broadcast 10.0.0.255
 	hwaddress ether 00:1F:F1:BE:9B:54
+
+route add -net 10.0.0.0/24 gw 192.168.252.254

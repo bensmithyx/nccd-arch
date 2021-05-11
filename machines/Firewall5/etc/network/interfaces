@@ -7,11 +7,11 @@ iface eth0 inet static
 	netmask 255.255.248.0
 	broadcast 172.16.7.255
 
-
-
 auto eth1
 iface eth1 inet static
 	address 192.168.254.1
 	netmask 255.255.255.0
     gateway 192.168.254.254
 	broadcast 192.168.254.255
+
+route add -net 10.0.0.0/24 gw 172.16.7.253
