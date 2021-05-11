@@ -6,3 +6,5 @@
 
 # PCAPS aren't needed and will change on access so changes hash, just don't include
 *.pcap
+
+machines/*.png

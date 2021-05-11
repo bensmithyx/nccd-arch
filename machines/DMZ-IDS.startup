@@ -2,3 +2,4 @@ ifup eth0
 ifup eth1
 
 route add -net 192.168.6.0/24 gw 192.168.8.254
+route add -net 172.16.0.0/21 gw 192.168.8.254
