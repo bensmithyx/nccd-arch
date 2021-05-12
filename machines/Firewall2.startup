@@ -19,4 +19,7 @@ route add -net 192.168.251.0/24 gw 192.168.5.1
 route add -net 192.168.253.0/24 gw 192.168.5.1
 route add -net 192.168.254.0/24 gw 192.168.5.1
 
+#iptables -F
 #iptables -P INPUT DROP
+#iptables -P FORWARD DROP
+#iptables -A FORWARD -p tcp -m multiport 
