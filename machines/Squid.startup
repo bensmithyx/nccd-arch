@@ -7,4 +7,7 @@ iptables -t nat -F
 #iptables -P FORWARD DROP
 ##www should never start a connection so log the error since it's weird
 #iptables -A FORWARD -m state --state NEW -i eth1 -j LOG --log-prefix='[WWW NEW CONNECTION]'
-iptables -A FORWARD -m multiport --dport 80,443 -i eth0 
+##accept web traffic coming in 
+#iptables -A FORWARD -m multiport --dport 80,443 -i eth0 -j ACCEPT
+##accept existing web traffic coming out
+#iptables -A FORWARD -m state --state ESTABLISHED, RELATED -o eth0 -j ACCEPT
