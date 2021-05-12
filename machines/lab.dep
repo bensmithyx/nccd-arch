@@ -9,8 +9,6 @@ Firewall2:
 Firewall3:
 Firewall4:
 Firewall5:
-Firewall6:
-Firewall7:
 IDS-Manager:
 Int-DNS:
 Int-Router:
@@ -18,10 +16,10 @@ Int-WWW:
 Internet:
 LDAP:
 Mail:
-OpenVPN: 
+OpenVPN:
 SMTP-Relay:
 Squid:
-Staff-1: 
-Staff-2: 
-Staff-3: 
-Staff-Proxy: 
+Staff-1:
+Staff-2:
+Staff-3:
+Staff-Proxy:
