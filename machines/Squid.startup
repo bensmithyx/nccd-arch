@@ -1,2 +1,10 @@
 ifup eth0
 ifup eth1
+
+
+iptables -F 
+iptables -t nat -F
+#iptables -P FORWARD DROP
+##www should never start a connection so log the error since it's weird
+#iptables -A FORWARD -m state --state NEW -i eth1 -j LOG --log-prefix='[WWW NEW CONNECTION]'
+iptables -A FORWARD -m multiport --dport 80,443 -i eth0 
