@@ -9,15 +9,12 @@ route add -net 172.16.0.0/21 gw 192.168.1.1
 
 # Zone 4 - Servers
 route add -net 192.168.4.0/24 gw 192.168.1.1
-<<<<<<< HEAD
 
 # Zone 5 - Managerial
 route add -net 192.168.5.0/24 gw 192.168.1.1
 
 # Zone 6 - Proxy
-=======
 route add -net 192.168.253.0/24 gw 192.168.1.1
->>>>>>> cf9dcca6d79ee163f298c0620da729d90bca287e
 route add -net 192.168.6.0/24 gw 192.168.1.1
 route add -net 8.8.0.0/16 gw 137.205.157.254
 route add -net 22.39.224.16 gw 137.205.157.254
@@ -40,7 +37,6 @@ iptables -t nat -F
 
 #dnat to our public ip address, it could be static but for the sake of expansion use masquerade for dynamic
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-<<<<<<< HEAD
 
 ##snat for web traffic to squid
 #iptables -t nat -A PREROUTING -i eth0 -p tcp -m multiport --dport 80,443 -j DNAT --to-destination 192.168.2.1
@@ -60,5 +56,3 @@ iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 route add -net 8.8.0.0/16 gw 137.205.157.254
 route add -net 22.39.224.16 gw 137.205.157.254
 route add -net 201.224.0.0/16 gw 137.205.157.254
-=======
->>>>>>> cf9dcca6d79ee163f298c0620da729d90bca287e

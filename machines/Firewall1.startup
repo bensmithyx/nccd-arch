@@ -55,3 +55,7 @@ route add -net 192.168.253.0/24 gw 192.168.2.3
 ##allow ssh
 #iptables -t nat -A PREROUTING -p tcp --dport 22 -j DNAT --to-destination 192.168.5.1
 #iptables -A FORWARD -p tcp --dport 22 -i eth0 -j ACCEPT
+
+##allow openvpn
+#iptables -t nat -A PREROUTING -p udp --dport 1194 -j DNAT --to-destination 10.0.0.1
+#iptables -A FORWARD -p udp --dport 1194 -j ACCEPT
