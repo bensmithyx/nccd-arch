@@ -3,7 +3,7 @@ ifup eth1
 ifup eth2
 ifup eth3
 
-route add -net 172.16.0.0/21 gw 192.168.254.1
 route add -net 192.168.4.0/24 gw 192.168.253.1
+route add -net 172.16.0.0/21 gw 192.168.254.1
 route add -net 192.168.5.0/24 gw 192.168.252.1
 route add -net 10.0.0.0/24 gw 192.168.254.1
