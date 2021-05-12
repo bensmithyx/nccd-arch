@@ -13,6 +13,7 @@ route add -net 192.168.5.0/24 gw 192.168.2.3
 
 # Zone 6 - Proxy
 route add -net 192.168.6.0/24 gw 192.168.2.1
+<<<<<<< HEAD
 
 # Zone 7 - VPN
 route add -net 10.0.0.0/24 gw 192.168.2.3
@@ -21,7 +22,36 @@ route add -net 10.0.0.0/24 gw 192.168.2.3
 route add -net 192.168.8.0/24 gw 192.168.2.3
 
 # Int-Router
+=======
+route add -net 192.168.254.0/24 gw 192.168.2.3
+>>>>>>> cf9dcca6d79ee163f298c0620da729d90bca287e
 route add -net 192.168.252.0/24 gw 192.168.2.3
 route add -net 192.168.251.0/24 gw 192.168.2.3
 route add -net 192.168.253.0/24 gw 192.168.2.3
-route add -net 192.168.254.0/24 gw 192.168.2.3
+
+
+
+#iptables -F
+#iptables -t nat -F
+
+##block by default
+#iptables -P FORWARD REJECT
+
+##dnat for web traffic to squid
+#iptables -t nat -A PREROUTING -i eth0 -p tcp -m multiport --dport 80,443 -j DNAT --to-destination 192.168.2.1
+
+# #allow smtp through and out
+# iptables -t nat -A PREROUTING -i eth0 -p tcp -m multiport --dport 25,465 -j DNAT --to-destination 192.168.2.2
+# iptables -A FORWARD -m multiport --dport 25,465 -i eth0 -j ACCEPT
+
+##accept new web traffic in
+#iptables -A FORWARD -p tcp -m multiport -m state --state NEW --dport 80,443 -i eth0 -j ACCEPT
+
+##allow existing web traffic
+#iptables -A FORWARD -p tcp -m multiport -m state --dport 80,443 --state ESTABLISHED,RELATED -i eth0 -j ACCEPT
+##allow int-www response traffic
+#iptables -A FORWARD -p tcp -m multiport -m state --sport 80,443 --state ESTABLISHED,RELATED -i eth1 -j ACCEPT
+
+##allow ssh
+#iptables -t nat -A PREROUTING -p tcp --dport 22 -j DNAT --to-destination 192.168.5.1
+#iptables -A FORWARD -p tcp --dport 22 -i eth0 -j ACCEPT

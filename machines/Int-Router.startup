@@ -14,3 +14,8 @@ route add -net 192.168.5.0/24 gw 192.168.252.1
 
 # Zone 7 - VPN
 route add -net 10.0.0.0/24 gw 192.168.254.1
+
+##barely any rules since everything has been previously routed through firewall
+#iptables -P INPUT DROP
+#iptables -A INPUT -s 192.168.252.1 -p tcp --dport 22 -j ACCEPT
+#iptables -A INPUT -s 192.168.5.1 -p tcp --dport 22 -j ACCEPT
