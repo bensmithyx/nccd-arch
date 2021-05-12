@@ -5,6 +5,8 @@ ifup eth1
 iptables -F 
 iptables -t nat -F
 #iptables -P FORWARD DROP
+##forward everything to the int-www machine
+#iptables -t nat -A PREROUTING -i eth0 -j SNAT --to-source 192.168.6.1
 ##www should never start a connection so log the error since it's weird
 #iptables -A FORWARD -m state --state NEW -i eth1 -j LOG --log-prefix='[WWW NEW CONNECTION]'
 ##accept web traffic coming in 
