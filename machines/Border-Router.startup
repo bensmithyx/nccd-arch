@@ -39,20 +39,21 @@ iptables -t nat -F
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 
 ##snat for web traffic to squid
-#iptables -t nat -A PREROUTING -i eth0 -p tcp -m multiport --dport 80,443 -j DNAT --to-destination 192.168.2.1
+iptables -t nat -A PREROUTING -i eth0 -p tcp -m multiport --dport 80,443 -j DNAT --to-destination 192.168.2.1
 
 ##allow smtp through and out
-#iptables -t nat -A PREROUTING -i eth0 -p tcp -m multiport --dport 25,465 -j DNAT --to-destination 192.168.2.2
-#iptables -A FORWARD -m multiport --dport 25,465 -i eth0 -j ACCEPT
+iptables -t nat -A PREROUTING -i eth0 -p tcp -m multiport --dport 25,465 -j DNAT --to-destination 192.168.2.2
+iptables -A FORWARD -m multiport --dport 25,465 -i eth0 -j ACCEPT
 
 ##accept new web traffic in
-#iptables -A FORWARD -p tcp -m multiport -m state --state NEW --dport 80,443 -i eth0 -j ACCEPT
+iptables -A FORWARD -p tcp -m multiport -m state --state NEW --dport 80,443 -i eth0 -j ACCEPT
 
 ##allow existing web traffic
-#iptables -A FORWARD -p tcp -m multiport -m state --dport 80,443 --state ESTABLISHED,RELATED -i eth0 -j ACCEPT
+iptables -A FORWARD -p tcp -m multiport -m state --dport 80,443 --state ESTABLISHED,RELATED -i eth0 -j ACCEPT
 ##allow int-www response traffic
-#iptables -A FORWARD -p tcp -m multiport -m state --sport 80,443 --state ESTABLISHED,RELATED -i eth1 -j ACCEPT
+iptables -A FORWARD -p tcp -m multiport -m state --sport 80,443 --state ESTABLISHED,RELATED -i eth1 -j ACCEPT
 
+# External
 route add -net 8.8.0.0/16 gw 137.205.157.254
 route add -net 22.39.224.16 gw 137.205.157.254
 route add -net 201.224.0.0/16 gw 137.205.157.254
