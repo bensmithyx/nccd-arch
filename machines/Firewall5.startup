@@ -18,3 +18,4 @@ iptables -A FORWARD -m multiport -p udp --dport 1194 -d 10.0.0.0/24 -j ACCEPT
 #staff
 iptables -A FORWARD -m multiport -p udp 53,1194 -j ACCEPT
 iptables -A FORWARD -m multiport -p tcp --dport 25,465,80,443,389,636 -j ACCEPT
+iptables -A FORWARD -m multiport -p tcp --sport 25,465,80,443,389,636 -j ACCEPT
