@@ -1,9 +1,19 @@
 ifup eth0
 ifup eth1
 
+# Zone 3 - Employees
 route add -net 172.16.0.0/21 gw 192.168.252.254
-route add -net 10.0.0.0/24 gw 192.168.252.254
+
+# Zone 4 - Servers
 route add -net 192.168.4.0/24 gw 192.168.252.254
+
+# Zone 6 - Proxy
+route add -net 192.168.6.0/24 gw 192.168.252.254
+
+# Zone 7 - VPN
+route add -net 10.0.0.0/24 gw 192.168.252.254
+
+# Int-Router
 route add -net 192.168.251.0/24 gw 192.168.252.254
 route add -net 192.168.253.0/24 gw 192.168.252.254
 route add -net 192.168.254.0/24 gw 192.168.252.254

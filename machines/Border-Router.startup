@@ -1,15 +1,32 @@
 ifup eth0
 ifup eth1
 
+# Zone 2 - DMZ
+route add -net 192.168.2.0/24 gw 192.168.1.1
 
-route add -net 192.168.8.0/24 gw 192.168.1.1
-route add -net 192.168.5.0/24 gw 192.168.1.1
+# Zone 3 - Employees
 route add -net 172.16.0.0/21 gw 192.168.1.1
-route add -net 10.0.0.0/24 gw 192.168.1.1
+
+# Zone 4 - Servers
 route add -net 192.168.4.0/24 gw 192.168.1.1
-# Towards Int-Router
-route add -net 192.168.253.0/24 gw 192.168.1.1
+
+# Zone 5 - Managerial
+route add -net 192.168.5.0/24 gw 192.168.1.1
+
+# Zone 6 - Proxy
 route add -net 192.168.6.0/24 gw 192.168.1.1
+
+# Zone 7 -VPN
+route add -net 10.0.0.0/24 gw 192.168.1.1
+
+# Zone 8 IDS
+route add -net 192.168.8.0/24 gw 192.168.1.1
+
+# Int-Router
+route add -net 192.168.251.0/24 gw 192.168.1.1
+route add -net 192.168.252.0/24 gw 192.168.1.1
+route add -net 192.168.253.0/24 gw 192.168.1.1
+route add -net 192.168.254.0/24 gw 192.168.1.1
 
 iptables -F
 iptables -t nat -F
