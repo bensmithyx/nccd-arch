@@ -36,3 +36,7 @@ iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 #iptables -A FORWARD -p tcp -m multiport -m state --dport 80,443 --state ESTABLISHED,RELATED -i eth0 -j ACCEPT
 ##allow int-www response traffic
 #iptables -A FORWARD -p tcp -m multiport -m state --sport 80,443 --state ESTABLISHED,RELATED -i eth1 -j ACCEPT
+
+route add -net 8.8.0.0/16 gw 137.205.157.254
+route add -net 22.39.224.16 gw 137.205.157.254
+route add -net 201.224.0.0/16 gw 137.205.157.254
