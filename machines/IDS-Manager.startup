@@ -20,3 +20,6 @@ route add -net 192.168.254.0/24 gw 192.168.252.254
 #testpassword
 
 systemctl start ssh
+route add -net 192.168.251.0/24 gw 192.168.252.254
+route add -net 192.168.253.0/24 gw 192.168.252.254
+route add -net 192.168.254.0/24 gw 192.168.252.254
