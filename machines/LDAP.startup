@@ -1,1 +1,4 @@
 ifup eth0
+
+#iptables -F
+#iptables -P INPUT DROP
