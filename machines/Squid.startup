@@ -4,6 +4,7 @@ ifup eth1
 
 iptables -F 
 iptables -t nat -F
+iptables -P INPUT DROP
 #iptables -P FORWARD REJECT
 ##forward everything to the int-www machine
 #iptables -t nat -A PREROUTING -i eth0 -j SNAT --to-source 192.168.6.1

@@ -26,7 +26,7 @@ route add -net 192.168.253.0/24 gw 192.168.2.3
 route add -net 192.168.254.0/24 gw 192.168.2.3
 =======
 ##whitelist by default
-#iptables -P INPUT DROP
+#iptables -P INPUT REJECT
 ##allow smtp 
 #iptables -A INPUT -i eth0 -p tcp -m multiport --dport 25,465 -j ACCEPT
 ##reject ssh to this machine from outside

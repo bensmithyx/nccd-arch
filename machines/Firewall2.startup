@@ -20,4 +20,4 @@ route add -net 192.168.253.0/24 gw 192.168.5.1
 route add -net 192.168.254.0/24 gw 192.168.5.1
 
 ##reject ssh to this machine from outside
-#iptables -A INPUT -i eth0 -p tcp --dport 22 -j REJECT
+#iptables -P INPUT DROP
