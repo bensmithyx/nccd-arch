@@ -1,1 +1,8 @@
 ifup eth0
+
+##whitelist by default
+#iptables -P INPUT DROP
+##allow smtp 
+#iptables -A INPUT -i eth0 -p tcp -m multiport --dport 25,465 -j ACCEPT
+##reject ssh to this machine from outside
+#iptables -A INPUT -i eth0 -p tcp --dport 22 -s 192.168.5.1 -j ACCEPT
