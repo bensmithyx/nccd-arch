@@ -5,15 +5,14 @@ Ext-DNS:
 Ext-Office:
 Ext-WWW:
 Firewall1:
-Firewall2: Squid
+Firewall2:
 Firewall3:
 Firewall4:
 Firewall5:
-Firewall6:
 IDS-Manager:
 Int-DNS:
 Int-Router:
-Int-WWW: Firewall2
+Int-WWW: Squid
 Internet:
 LDAP:
 Mail:
