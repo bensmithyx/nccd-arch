@@ -40,7 +40,7 @@ iptables -t nat -A PREROUTING -i eth0 -p tcp -m multiport --dport 80,443 -j DNAT
 
 ##allow smtp through and out
 iptables -t nat -A PREROUTING -i eth0 -p tcp -m multiport --dport 25,465 -j DNAT --to-destination 192.168.2.2
-iptables -A FORWARD -m multiport --dport 25,465 -i eth0 -j ACCEPT
+iptables -A FORWARD -p tcp -m multiport --dport 25,465 -i eth0 -j ACCEPT
 
 ##accept new web traffic in
 iptables -A FORWARD -p tcp -m multiport -m state --state NEW --dport 80,443 -i eth0 -j ACCEPT
@@ -49,6 +49,3 @@ iptables -A FORWARD -p tcp -m multiport -m state --state NEW --dport 80,443 -i e
 iptables -A FORWARD -p tcp -m multiport -m state --dport 80,443 --state ESTABLISHED,RELATED -i eth0 -j ACCEPT
 ##allow int-www response traffic
 iptables -A FORWARD -p tcp -m multiport -m state --sport 80,443 --state ESTABLISHED,RELATED -i eth1 -j ACCEPT
-#allow pings
-iptables -A FORWARD -p icmp --icmp-type echo-reply -j ACCEPT
-iptables -A FORWARD -p icmp --icmp-type echo-request -j ACCEPT
