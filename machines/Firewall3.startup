@@ -6,6 +6,9 @@ ifup eth2
 #iptables -F
 #iptables -t nat -F
 ##iptables -P FORWARD REJECT
-
+#iptables -P INPUT DROP
 ##block going through firewall wrong direction
 #iptables -A FORWARD -i eth1 -o eth0 -j ACCEPT
+##allow pinging
+#iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
+#iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT

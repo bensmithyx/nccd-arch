@@ -1,3 +1,7 @@
 ifup eth0
 
 systemctl start apache2
+
+#iptables -F
+#iptables -P INPUT REJECT
+#iptables -A INPUT -p tcp -m multiport --dport 80,443 -j ACCEPT
