@@ -39,5 +39,3 @@ route add -net 192.168.254.0/24 gw 192.168.5.1
 ##allow pinging
 #iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
 #iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
-#iptables -A FORWARD -p icmp --icmp-type echo-reply -j ACCEPT
-#iptables -A FORWARD -p icmp --icmp -type echo-request -j ACCEPT
