@@ -7,22 +7,14 @@ route add -net 192.168.5.0/24 gw 192.168.1.1
 route add -net 172.16.0.0/21 gw 192.168.1.1
 route add -net 10.0.0.0/24 gw 192.168.1.1
 route add -net 192.168.4.0/24 gw 192.168.1.1
-# Towards Int-Router
 route add -net 192.168.253.0/24 gw 192.168.1.1
 route add -net 192.168.6.0/24 gw 192.168.1.1
-
-iptables -F
-iptables -t nat -F
-#iptables -P FORWARD DROP
-#iptables -P FORWARD DROP
-#iptables -P OUTPUT DROP
-
-
-
-#dnat to our public ip address, it could be static but for the sake of expansion use masquerade for dynamic
-iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-
-
 route add -net 8.8.0.0/16 gw 137.205.157.254
 route add -net 22.39.224.16 gw 137.205.157.254
 route add -net 201.224.0.0/16 gw 137.205.157.254
+
+iptables -F
+iptables -t nat -F
+
+#dnat to our public ip address, it could be static but for the sake of expansion use masquerade for dynamic
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
