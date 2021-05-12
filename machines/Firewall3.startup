@@ -5,7 +5,7 @@ ifup eth2
 ##block by default
 #iptables -F
 #iptables -t nat -F
-##iptables -P FORWARD DROP
+##iptables -P FORWARD REJECT
 
 ##block going through firewall wrong direction
 #iptables -A FORWARD -i eth1 -o eth0 -j ACCEPT
