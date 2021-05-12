@@ -1,6 +1,1 @@
 ifup eth0
-
-#iptables -F
-#iptables -A INPUT -m multiport -p tcp --dport 25,465 -j ACCEPT
-#iptables -A INPUT  -p icmp --icmp-type echo-reply -j ACCEPT
-#iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT

@@ -3,10 +3,7 @@ ifup eth1
 
 iptables -F
 iptables -P FORWARD DROP
-iptables -P INPUT DROP
 iptables -A FORWARD -m multiport -p tcp --dport 25,465,389,636 -j ACCEPT
 iptables -A FORWARD -m multiport -p tcp --sport 25,465,389,636 -j ACCEPT
-iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
-iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
 iptables -A FORWARD -p icmp --icmp-type echo-reply -j ACCEPT
 iptables -A FORWARD -p icmp --icmp-type echo-request -j ACCEPT

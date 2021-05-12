@@ -20,9 +20,6 @@ route add -net 8.8.0.0/16 gw 137.205.157.254
 route add -net 22.39.224.16 gw 137.205.157.254
 route add -net 201.224.0.0/16 gw 137.205.157.254
 
-# Zone 7 -VPN
-route add -net 10.0.0.0/24 gw 192.168.1.1
-
 # Zone 8 IDS
 route add -net 192.168.8.0/24 gw 192.168.1.1
 
@@ -52,8 +49,6 @@ iptables -A FORWARD -p tcp -m multiport -m state --state NEW --dport 80,443 -i e
 iptables -A FORWARD -p tcp -m multiport -m state --dport 80,443 --state ESTABLISHED,RELATED -i eth0 -j ACCEPT
 ##allow int-www response traffic
 iptables -A FORWARD -p tcp -m multiport -m state --sport 80,443 --state ESTABLISHED,RELATED -i eth1 -j ACCEPT
-
-# External
-route add -net 8.8.0.0/16 gw 137.205.157.254
-route add -net 22.39.224.16 gw 137.205.157.254
-route add -net 201.224.0.0/16 gw 137.205.157.254
+#allow pings
+iptables -A FORWARD -p icmp --icmp-type echo-reply -j ACCEPT
+iptables -A FORWARD -p icmp --icmp-type echo-request -j ACCEPT
