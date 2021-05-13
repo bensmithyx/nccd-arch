@@ -2,11 +2,11 @@ ifup eth0
 ifup eth1
 
 # #block by default
-# iptables -F
+iptables -F
 # iptables -t nat -F
-# #iptables -P FORWARD DROP
+iptables -P FORWARD DROP
 # #block going through firewall wrong direction
-# iptables -A FORWARD -i eth1 -o eth0 -j ACCEPT
+iptables -A FORWARD -i eth1 -o eth0 -j ACCEPT
 # #allow pings
-# iptables -A FORWARD -p icmp --icmp-type echo-reply -j ACCEPT
-# iptables -A FORWARD -p icmp --icmp-type echo-request -j ACCEPT
+iptables -A FORWARD -p icmp --icmp-type echo-reply -j ACCEPT
+iptables -A FORWARD -p icmp --icmp-type echo-request -j ACCEPT
