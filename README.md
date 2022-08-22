@@ -1,4 +1,4 @@
-Github is trash and deletes empty directories
+Github deletes empty directories
 ensures lab.dep has everything opening in parallel
 ```bash
 ls | grep startup | sed 's/.startup//g' | xargs -I % echo %: > lab.dep
